@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script language="Javascript">
+<!--
+var x = 0
+
+function opendo(name,wid,hei)
+{
+
+ win = window.open (name , "do", "toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width="+ wid +",height="+ hei +"");
+
+ if (navigator.appName.indexOf("Microsoft") != -1 && parseInt(navigator.appVersion) >= 4 ||
+		navigator.appName == "Netscape" && parseInt(navigator.appVersion) >= 4) {
+		if (!win.opener)win.opener=self;
+		if (win.focus)win.focus();
+	}
+}
+
+function PRO_openPopupWindow(theURL,winName,intWidth,intHeight,features,centralise) { //v2.0
+	features = features + ",width=" + intWidth + ",height=" + intHeight;
+
+	if (centralise == "yes") {
+		var intAvailWidth = 640, intAvailHeight = 480;
+		var intMargin = 10;
+		var intTop = intMargin, intLeft = intMargin;
+		if (typeof(screen) == "object") {
+			intAvailWidth = screen.availWidth;
+			intAvailHeight = screen.availHeight;
+		}
+		intTop = Math.round(intAvailHeight/2 - intHeight/2);
+		if (intTop < intMargin) intTop = intMargin;
+		intLeft = Math.round(intAvailWidth/2 - intWidth/2);
+		if (intLeft < intMargin) intLeft = intMargin;
+		features = features + ",left=" + intLeft + ",top=" + intTop;
+	}
+
+  var newWin = window.open(theURL,winName,features);
+  if (newWin.focus) newWin.focus();
+  document.MM_returnValue = false;
+}
+//-->
+</script>
+<title>The National Archives Learning Curve | Victorian Britain | Industrial Nation | Find Out More</title>
+<!--#include virtual="/includes/google-analytics-gtm-head.inc" --><script language="JavaScript" type="text/JavaScript" src="/education/victorianbritain/scripts/print.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK href="/education/victorianbritain/css/style.css" rel=stylesheet type="text/css">
+
+<script language="JavaScript" type="text/JavaScript" src="/education/victorianbritain/scripts/nojavascript.js"></script><link href="/css/menusmicrosites/breadcrumb.css" rel="stylesheet" type="text/css"></head>
+
+<body leftmargin="0" topmargin="0">
+<!--#include virtual="/includes/google-analytics-gtm-body.inc" --><!--#include file="/includes/menusmicrosites/vb_breadcrumb.inc" -->
+<table width="100%" border="0" align="left" cellpadding="5" cellspacing="0">
+  <tr valign="top"><td width="50">&#160;</td>
+    <td colspan="2">
+      <img src="/education/victorianbritain/global/fom.gif" align="top" alt="Find Out More"></td>
+  </tr>
+  <tr><td>&#160;</td><td colspan="2" class="breadcrumbs"><a href="/education/victorianbritain/default.htm">Home</A>
+        > <a href="default.htm">Industrial Nation</a>
+        > Find Out More</td></tr>
+  <tr valign="bottom">
+  <td>&#160;</td>
+    <td align="center" valign="bottom"><img class="images" src="/education/victorianbritain/industrial/images/fom3.jpg" width="300" height="240" alt="An attack on a workhouse in Stockport" align="bottom"><img src="/education/victorianbritain/global/transparent.gif" width="45" height="10"><br>
+      <b>An attack on a workhouse in Stockport</b> <br>
+    </td>
+	<td><img src="/education/victorianbritain/industrial/images/lordashley.jpg" alt="Lord Ashley" align="bottom" class="images2"><br><b>Lord Shaftesbury (formerly known as Lord Ashley)</b></td>
+    
+  </tr>
+  <tr valign="top">
+  <td>&#160;</td>
+    <td align="center">
+      <p><font face="Arial, Helvetica, sans-serif" size="2" color="330000">Lord
+        Shaftesbury spent most of his life trying to improve the lives of the
+        poorest and most oppressed people in Britain, but his most famous work
+        was in the preparation of the 'First Report of the Children's Employment
+        Commissioners: Mines and Collieries' in 1842.</font> </p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2" color="330000">In
+        the report, Shaftesbury printed many pictures of working conditions in
+        mines and also included accounts of interviews with workers. </font></p>
+        <font face="Arial, Helvetica, sans-serif" size="2" color="330000">Look at these pictures, and read the accounts from the report in
+      source 4 of the Industrial Nation.</font><br><br>
+      <div align="center"><a href="/education/victorianbritain/industrial/ashley.htm" onClick="PRO_openPopupWindow('/education/victorianbritain/industrial/ashley.htm','popup','360','500','scrollbars=yes,resizable=yes','yes');return document.MM_returnValue"><img src="images/fom1s.jpg" alt="ZPER 34/1; newspaper description of Lord Ashley " border="0" align="middle"></a></div><br>
+      <b>Click on the image of the newspaper description of Lord Ashley to view it in another window</b>
+    </td>
+    <td align="center"><img class="images" src="/education/victorianbritain/industrial/images/fom5.jpg" width="350" height="141" align="top" alt="Prints of young persons included in Lord Ashley's report on children "><br>
+    <img class="images" src="/education/victorianbritain/industrial/images/fom4.jpg" width="350" height="141" align="top" alt="Prints of young persons included in Lord Ashley's report on children "><br>
+    <b>Trammers pulled sledges of coal</b></td>
+  </tr>
+   
+</table>
+
+</body>
+</html>
